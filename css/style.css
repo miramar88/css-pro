@@ -57,6 +57,13 @@ a {
   margin: 0 auto;
 }
 
+.title {
+  font-family: 'Roboto-Medium', sans-serif;
+  line-height: 1;
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+
 .button {
   display: block;
   padding: 25px 41px;
@@ -154,11 +161,7 @@ a {
 
 .hero__title {
   margin-bottom: 60px;
-  font-family: 'Roboto-Medium', sans-serif;
-  line-height: 1;
   font-size: 3em;
-  color: #000000;
-  letter-spacing: 0.05em;
 }
 
 .hero__button {
@@ -167,3 +170,54 @@ a {
 }
 
 /* hero styles end */
+
+/* about styles */
+
+.about-top {
+  max-width:540px;
+  padding-top: 112px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-top__title {
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.about-benefit {
+  padding: 100px 0;
+  background-color: #34547A;
+  color: #fff;
+}
+
+.about-benefit__list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-benefit__item {
+  width: 141px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.about-benefit__item:last-of-type {
+  margin-right: 0;
+}
+
+.about-benefit__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.about-benefit__count {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: 21px;
+}
