@@ -144,7 +144,7 @@ a {
 /* hero styles */
 
 .hero__inner {
-  min-height: 100vh;
+  min-height: 700px;
   padding-left: 80px;
   display: flex;
   justify-content: center;
@@ -183,7 +183,7 @@ a {
 
 .about-top {
   max-width:540px;
-  padding-top: 112px;
+  padding-top: 7rem;
   padding-bottom: 100px;
   margin: 0 auto;
   text-align: center;
@@ -259,6 +259,14 @@ a {
   width: 100%;
   height: 4px;
   background: #c4c4c4;
+}
+ 
+.skills__progress::-webkit-progress-bar,
+.skills__progress::-moz-progress-bar {
+  background-color: #c4c4c4;
+}
+.skills__progress::-webkit-progress-value {
+  background-color: #34537a;
 }
 
 .skills__progress[attr="value"] {
@@ -507,3 +515,159 @@ a {
 }
 
 /* footer end */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    margin-bottom: 60px;
+    font-size: 2.5em;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .hero__content {
+    margin-left: 80px;
+  }
+
+  .about-benefit {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  
+  .about-benefit__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-benefit__item {
+    margin-bottom: 20px;
+  }
+
+  .skills__photo,
+  .skills__photo img {
+    width: 400px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero__inner {
+    padding-top: 108px;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__button {
+    margin-top: 2rem;
+  }
+
+  .about-top {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-top__title {
+    margin-bottom: 1em;
+  }
+
+  .skills__inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .skills__photo {
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+   .skills__title {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .skills__info {
+    max-width: 400px;
+  }
+
+  /* .skills__item:last-child {
+    margin-bottom: 0;
+  } */
+
+ }
+
+ @media screen and (max-width: 480px) {
+   body {
+     font-size: 14px;
+   }
+
+   .hero__inner {
+     padding-top: 70px;
+   }
+
+   .hero__image {
+     width: 300px;
+   }
+
+   .hero__title {
+     font-size: 1.8rem;
+   }
+
+   .hero__image img {
+     width: 300px;
+   }
+
+   .about-top {
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+   }
+
+   .about-benefit__item {
+      width: 100%;
+      justify-content: center;
+      margin-right: 0;
+    }
+
+    .skills__inner {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    
+    .skills__photo,
+    .skills__photo img {
+      width: 100%;
+      height: auto;
+    }
+
+     .skills__info {
+      width: 100%;
+    }
+
+  }
+ } 
