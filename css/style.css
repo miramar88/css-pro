@@ -98,6 +98,7 @@ a {
 .header {
   width: 100%;
   position: fixed;
+  z-index: 100;
 }
 
 .header__inner {
@@ -116,6 +117,10 @@ a {
   100% {
     opacity: 1;
   }
+}
+
+.header__logo {
+   display: inline-block;
 }
 
 .header__menu {
@@ -139,6 +144,10 @@ a {
 
 .header__link:hover {
   color: #0472f8;
+}
+
+.header__menu-btn {
+  display: none;
 }
 
 /* header styles end */
@@ -171,7 +180,11 @@ a {
 
 .hero__title {
   margin-bottom: 60px;
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
   font-size: 3em;
+  line-height: 1;
+  color: #000;
 }
 
 .hero__button {
@@ -525,6 +538,17 @@ a {
 
 
 @media screen and (max-width: 1024px) {
+
+  .header__inner {
+    padding-top: 25px;
+  }
+
+  .header__logo,
+  .header__logo img {
+    height: 35px;
+    width: auto;
+  }
+
   .hero__title {
     margin-bottom: 60px;
     font-size: 2.5em;
@@ -537,8 +561,40 @@ a {
     padding: 0 40px;
   }
 
+  .button {
+    padding: 20px 36px;
+    padding-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .header__item {
+    margin-left: 26px;
+  }
+
+  .header__link {
+    font-size: 15px;
+  }
+
+  .hero__inner {
+    padding-left: 0;
+  }
+
+  .hero__image,
+  .hero__image img {
+    width: 280px;
+    height: auto;
+  }
+
   .hero__content {
-    margin-left: 80px;
+    margin-left: 50px;
+  }
+
+  .hero__title {
+    margin-bottom: 45px;
+  }
+
+  .hero__button {
+    margin-top: 45px;
   }
 
   .about-benefit {
@@ -559,6 +615,10 @@ a {
   .skills__photo img {
     width: 400px;
     height: auto;
+  }
+
+  .skills__list {
+    max-width: 400px;
   }
 
   .process__inner {
@@ -589,8 +649,64 @@ a {
     font-size: 1.5rem;
   }
 
+   .header__inner {
+    padding-top: 15px;
+  }
+
+  .header__logo,
+  .header__logo img {
+    height: 25px;
+    width: auto;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  .header__menu-elem {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #34547a;
+    position: relative;
+    }
+
+  .header__menu-elem:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 8px;
+    left: 0;
+    background-color: #34547a;
+  }
+
+  .header__menu-elem:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: -8px;
+    left: 0;
+    background-color: #34547a;
+  }
+}
+
   .hero__inner {
-    padding-top: 108px;
+    height: auto;
+    padding-top: 20px;
     padding-left: 0;
     flex-direction: column;
     align-items: center;
